@@ -1,0 +1,22 @@
+{
+  "name": "batch_processing_validation_tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlpatterson59/batch_processing_validation_tool.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlpatterson59/batch_processing_validation_tool/issues"
+  },
+  "homepage": "https://github.com/vlpatterson59/batch_processing_validation_tool#readme",
+  "dependencies": {
+    "@types/google-apps-script": "^1.0.12"
+  }
+}

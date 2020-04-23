@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <?!= include("style"); ?>
+  </head>
+  <body class="grey lighten-4 blue-grey-text text-darken-3">
+    <header>
+      <div class="navbar-fixed">
+        <!-- Batches dropdown structure -->
+        <ul id="batches" class="dropdown-content light-blue accent-1">
+          <li><a href="#!">Open Batch</a></li>
+          <li><a href="#!">Close Batch</a></li>
+          <li><a href="#!">Validate</a></li>
+        </ul>
+        <!-- Reports dropdown structure -->
+        <ul id="reports" class="dropdown-content light-blue accent-1">
+          <li><a href="#!">By Issue Type</a></li>
+          <li><a href="#!">By Processor</a></li>
+          <li><a href="#!">By Batch Type</a></li>
+        </ul>
+        <!-- Sidenav structure -->
+        <ul id="mobile-screen" class="sidenav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="batches">Batch Tools<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="reports">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+        <nav class="light-blue accent-2" role="navigation">
+          <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">Batch Processing & Validation Tool</a>
+            <a href="#" data-target="mobile-screen" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="batches">Batch Tools<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a class="dropdown-trigger" href="#!" data-target="reports">Reports<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card grey lighten-2">
+              <div class="card-content brown-text text-darken-4">
+                <span class="card-title">Home</span>
+                <p>Home is the page you are currently on. On this page you will find useful information on what this tool does.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">Help</a>
+                <a href="#">About</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer grey lighten-2">
+      <div class="container">
+        <div class="row">
+          <h5 class="brown-text text-darken-4">Links</h5>
+          <div class="col">
+            <a class="brown-text text-darken-4" href="#!">Home</a>
+          </div>
+          <div class="col">
+            <a class="brown-text text-darken-4" href="#!">Batch Tools</a>
+          </div>
+          <div class="col">
+            <a class="brown-text text-darken-4" href="#!">Reports</a>
+          </div>
+          <div class="col">
+            <a class="brown-text text-darken-4" href="#!">Login</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container brown-text text-darken-4">
+          &copy; 2020 Howard County Board of Elections - All rights reserved
+          <a class="right brown-text text-darken-4" href="mailto:val.patterson@maryland.gov?subject=Batch%20Processing%20&amps;%20Validation%20Tool">Support</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <?!= include("script"); ?>
+  </body>
+</html>
